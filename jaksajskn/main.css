@@ -75,18 +75,55 @@ font-size: 30px;
   width: auto;
   background-color: rgb(72, 74, 73);
   color: white;
- border-radius:50px 50px 5px 5px ;
+border-radius: 50px 50px 5px 5px;
 }
 
+#link-form {
+  border-radius: 10px ;
+  background-color: rgb(172, 176, 168);
+  animation-name: slideExpandUp;
+ 	animation-duration: 1.6s;
+ 	animation-timing-function: ease-out;
+ 	visibility: visible !important;
+ }
+ @keyframes slideExpandUp {
+ 	0% {
+ 		transform: translateY(100%) scaleX(0.5);
+ 	}
+ 	30%{
+ 		transform: translateY(-8%) scaleX(0.5);
+ 	}
+ 	40%{
+ 		transform: translateY(2%) scaleX(0.5);
+ 	}
+ 	50%{
+ 		transform: translateY(0%) scaleX(1.1);
+ 	}
+ 	60%{
+ 		transform: translateY(0%) scaleX(0.9);
+ 	}
+ 	70% {
+ 		transform: translateY(0%) scaleX(1.05);
+ 	}
+ 	80%{
+ 		transform: translateY(0%) scaleX(0.95);
+ 	}
+ 	90% {
+ 		transform: translateY(0%) scaleX(1.02);
+ 	}
+ 	100%{
+ 		transform: translateY(0%) scaleX(1);
+ 	}
+ }
+
 .header{
-	margin-top:20px;
 font-family:  'ColorTube';
   text-align:center;
   font-size: 40px;
     height: 10vh;
 font: monospace;
     color: grey;
-
+margin-top: 20px;
 }
 .nav-wrapper{
   background: #e96443;  /* fallback for old browsers */
