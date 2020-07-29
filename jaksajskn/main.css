@@ -75,10 +75,11 @@ font-size: 30px;
   width: auto;
   background-color: rgb(72, 74, 73);
   color: white;
-
+ border-radius:50px 50px 5px 5px ;
 }
 
 .header{
+	margin-top:20px;
 font-family:  'ColorTube';
   text-align:center;
   font-size: 40px;
