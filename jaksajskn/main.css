@@ -4,17 +4,19 @@ body,html{
   padding: 0;
   box-sizing: border-box;
 background-color: white;
+overflow:hidden;
 }
 .row {
 
   background:url("wallpaper.svg");
   background-repeat:no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 50%;
   width: 100%;
   margin-top: 25vh;
 
 }
+
 
 
 h1 {
@@ -57,7 +59,6 @@ h1 {
 	}
 }
 
-
 .message-change{
 background: rgb(55, 59, 59);
 background-image: linear-gradient(rgb(63, 66, 66),rgb(55, 52, 52));
@@ -67,7 +68,7 @@ background-image: linear-gradient(rgb(63, 66, 66),rgb(55, 52, 52));
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
 .footer{
-  margin-top: 200px;
+  margin-top: 100px;
   text-align:center;
 font-size: 30px;
   height: 80vh;
@@ -80,7 +81,7 @@ font-size: 30px;
 .header{
 font-family:  'ColorTube';
   text-align:center;
-  font-size: 60px;
+  font-size: 40px;
     height: 10vh;
 font: monospace;
     color: grey;
@@ -96,8 +97,14 @@ font: monospace;
   background-color: white;
 
 }
-.lever{
-  background-color: yellow;
+/* IDEA: media queries */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  .header{
+    font-size:10px;
+
 }
 @font-face {
   font-family: 'ColorTube';
