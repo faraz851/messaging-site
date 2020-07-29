@@ -3,26 +3,48 @@
 
 <head>
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-</head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 <body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li>dark mode<a class="btn-floating pulse"><i class="material-icons">night_stays</i></a></li>
+          <li>
+            <div class="switch">
+              <label>
+
+                <input type="checkbox">
+                <span class="lever"></span>
+
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <div class="header">
-    Message Sharing Site
+    small message Sharing Site
   </div>
   <div class="row">
     <div class="col s8 offset-s2">
       <div id="message-show" class="card-panel hide">
         <h1></h1>
         <div>
-          <a href="./index.html">Create your own secret message</a>
+          <a href="./index.html">Create your own message</a>
         </div>
       </div>
 
       <div id="message-form" class="card-panel">
         <form>
-          <label>Enter a Secret Message</label>
+          <label>Enter a Message</label>
           <input id="message-input" />
           <button class="btn">Create</button>
         </form>
@@ -42,7 +64,27 @@
 
     &copy ayush dixit
   </div>
+
+
   <script src="index.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="jquery-3.5.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".lever").click(function() {
+        $("body").toggleClass("changeback");
+        $("#message-form").toggleClass("message-change");
+        $("link-form").toggleClass("message-change");
+      });
+
+
+    });
+  </script>
+
 </body>
 
 </html>
+<!-- IDEA: background: #3C3B3F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ -->
